@@ -156,4 +156,43 @@ details p.tip { color: var(--muted); }
 
 .pb { display: inline-block; margin-top: 8px; padding: 4px 10px; background: var(--ok); color: #fff; border-radius: 3px; font-weight: 600; }
 
+/* Equipment selector */
+.eq-section { margin: 22px 0 26px; }
+.eq-label { font-size: 13px; font-weight: 600; color: var(--muted); text-transform: uppercase; letter-spacing: .07em; margin-bottom: 10px; }
+.eq-chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.eq-chip {
+  padding: 8px 14px;
+  border-radius: 20px;
+  border: 2px solid var(--line);
+  background: var(--card);
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--muted);
+  transition: background .15s, border-color .15s, color .15s;
+}
+.eq-chip.always {
+  border-color: var(--ok);
+  color: var(--ok);
+  cursor: default;
+}
+.eq-chip.on {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+
+/* Equipment badge on exercise */
+.ex-gear {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--accent);
+  background: rgba(43,68,255,.1);
+  border-radius: 4px;
+  padding: 2px 7px;
+  margin-left: 8px;
+  vertical-align: middle;
+  font-family: 'Barlow', sans-serif;
+  letter-spacing: 0;
+}
+
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
