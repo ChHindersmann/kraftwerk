@@ -1,4 +1,4 @@
-const CACHE = 'kraftwerk-v1';
+const CACHE = 'kraftwerk-v2';
 const FILES = [
   './',
   './index.html',
